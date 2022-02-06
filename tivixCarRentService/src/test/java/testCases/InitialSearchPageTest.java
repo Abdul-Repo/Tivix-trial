@@ -2,7 +2,9 @@ package testCases;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -17,15 +19,17 @@ import pageObjexts.InitialSearchResultPageObject;
 public class InitialSearchPageTest extends BasePage{
 
 	public static String homeTitle;
-
+	static Logger logger = Logger.getLogger(InitialSearchPageTest.class);
 	
 	@Test(invocationCount=15, enabled=true, groups="NegitiveTest")
 	public static void homePageStability(){
+		logger.info("Checking the built stability");
 		driver.navigate().refresh();
 		homeTitle= driver.getTitle();
 		boolean flag=true;
 		if(!prop.getProperty("homePageTitle").equals(homeTitle)){
 			MyUtils.takeScreenShot("homePageStabilityError");
+			logger.fatal("Built not stable");
 			Assert.assertEquals(false, flag, "Application Not Stable");
 		} 
 	}
@@ -47,6 +51,7 @@ public class InitialSearchPageTest extends BasePage{
 				flag = DropdownOptions.equals(list);
 				break;
 			} else{
+				logger.fatal("Built not stable: Broke under Test: CountriesAllowedTest");
 				driver.get(driver.getCurrentUrl());
 			}
 		}while(prop.getProperty("homePageTitle").equals(homeTitle));
@@ -75,10 +80,11 @@ public class InitialSearchPageTest extends BasePage{
 					break;
 				}
 			} else{
+				logger.fatal("Built not stable: Broke under Test: CheckCityRespectiveToCountry");
 				driver.get(driver.getCurrentUrl());
 			}
 		}while(prop.getProperty("homePageTitle").equals(homeTitle));
-		MyUtils.takeScreenShot("CheckCityRespectiveToCountry");
+		MyUtils.takeScreenShot("Invalid City for selected Country");
 		Assert.assertFalse(pageChanged, "Navigates further even if incorrect city is selected");
 	}
 
@@ -104,9 +110,10 @@ public class InitialSearchPageTest extends BasePage{
 				}
 			} else{
 				driver.get(driver.getCurrentUrl());
+				logger.fatal("Built not stable: Broke under Test: PastDateBookingTest");
 			}
 		}while(!prop.getProperty("homePageTitle").equals(homeTitle));
-		MyUtils.takeScreenShot("PastDateBookingError");
+		MyUtils.takeScreenShot("Invalid booking date, Date in past");
 		Assert.assertFalse(pageChanged, "Navigates to next Step even if PAST date is selected");
 	}
 

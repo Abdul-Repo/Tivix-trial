@@ -3,6 +3,8 @@ package testCases;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -14,6 +16,7 @@ import myUtils.MyUtils;
 import pageObjexts.InitialSearchResultPageObject;
 
 public class InitialSearchResultPageTest extends BasePage {
+	static Logger logger = Logger.getLogger(InitialSearchPageTest.class);
 
 
 	public static void BookLowestFareTestMethod(){
@@ -37,6 +40,8 @@ public class InitialSearchResultPageTest extends BasePage {
 			rentBtn.click();
 			if(!prop.getProperty("homePageTitle").equals(driver.getTitle())){
 				driver.get(driver.getCurrentUrl());
+				logger.fatal("Built not stable: Broke under Test: Navigating to Bookings");
+
 			}
 			InitialSearchResultPageObject.CnfmRent.click();
 			if(!prop.getProperty("homePageTitle").equals(driver.getTitle())){
@@ -52,6 +57,8 @@ public class InitialSearchResultPageTest extends BasePage {
 	
 	@Test(groups="PositiveTest", enabled=true )
 	public static void BookLowestFareTest(){
+		logger.info("running BookLowestFareTest");
+
 		boolean flag = false;
 		do{ //using loop Since the application is not stable(to bypass the "Exception at /")
 			if(prop.getProperty("homePageTitle").equals(driver.getTitle())){
@@ -84,7 +91,6 @@ public class InitialSearchResultPageTest extends BasePage {
 				}
 			} else{
 				driver.navigate().refresh();
-
 			flag =driver.findElement(By.xpath("//h2[text()=' Summary:']")).isDisplayed();
 			}
 		}while(!prop.getProperty("homePageTitle").equals(driver.getTitle()));
