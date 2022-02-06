@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Tivix WebApplication Testing]" parallel="methods">
+  <test name="Home Page Test(failed)" parallel="methods">
+    <classes>
+      <class name="testCases.InitialSearchPageTest">
+        <methods>
+          <include name="CheckCityRespectiveToCountry"/>
+          <include name="tearDown"/>
+          <include name="PastDateBookingTest"/>
+          <include name="launchBrowser"/>
+          <include name="CountriesAllowedTest"/>
+          <include name="homePageStability"/>
+        </methods>
+      </class> <!-- testCases.InitialSearchPageTest -->
+      <class name="testCases.UserDetailsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.UserDetailsPageTest -->
+      <class name="testCases.InitialSearchResultPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.InitialSearchResultPageTest -->
+    </classes>
+  </test> <!-- Home Page Test(failed) -->
+  <test name="User Details Test(failed)" parallel="methods">
+    <classes>
+      <class name="testCases.InitialSearchPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.InitialSearchPageTest -->
+      <class name="testCases.UserDetailsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+          <include name="BookingCompletionTest"/>
+        </methods>
+      </class> <!-- testCases.UserDetailsPageTest -->
+      <class name="testCases.InitialSearchResultPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.InitialSearchResultPageTest -->
+    </classes>
+  </test> <!-- User Details Test(failed) -->
+</suite> <!-- Failed suite [Tivix WebApplication Testing] -->
