@@ -1,0 +1,34 @@
+2022-02-07 18:40:37 INFO  BasePage:45- Loading Property file
+	2022-02-07 18:40:37 INFO  BasePage:47- Choosing Browser as per Property file
+	2022-02-07 18:40:42 INFO  BasePage:53- Chrome Selected
+	2022-02-07 18:40:43 INFO  BasePage:65- Loading Browser
+	2022-02-07 18:40:45 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:46 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:46 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:46 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:46 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:47 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:47 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:47 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:47 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:48 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:48 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:48 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:48 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:49 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:49 INFO  InitialSearchPageTest:26- Checking the built stability
+	2022-02-07 18:40:49 INFO  BasePage:74- Quiting Browser
+	2022-02-07 18:40:50 INFO  BasePage:45- Loading Property file
+	2022-02-07 18:40:50 INFO  BasePage:47- Choosing Browser as per Property file
+	2022-02-07 18:40:51 INFO  BasePage:53- Chrome Selected
+	2022-02-07 18:40:53 INFO  BasePage:65- Loading Browser
+	2022-02-07 18:40:53 INFO  InitialSearchPageTest:60- running BookLowestFareTest
+	2022-02-07 18:40:55 INFO  BasePage:74- Quiting Browser
+	2022-02-07 18:40:55 INFO  BasePage:45- Loading Property file
+	2022-02-07 18:40:55 INFO  BasePage:47- Choosing Browser as per Property file
+	2022-02-07 18:40:56 INFO  BasePage:53- Chrome Selected
+	2022-02-07 18:40:58 INFO  BasePage:65- Loading Browser
+	2022-02-07 18:40:58 INFO  InitialSearchPageTest:19- Running BookingCompletionTest
+	2022-02-07 18:41:06 INFO  InitialSearchPageTest:30- Unable to navigate to booking page
+	2022-02-07 18:41:06 INFO  BasePage:74- Quiting Browser
+	

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="7" total="20" passed="13">
+<testng-results skipped="0" failed="4" total="20" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Tivix WebApplication Testing" duration-ms="23568" started-at="2022-02-06T16:46:40Z" finished-at="2022-02-06T16:47:04Z">
+  <suite name="Tivix WebApplication Testing" duration-ms="29324" started-at="2022-02-07T13:10:37Z" finished-at="2022-02-07T13:11:06Z">
     <groups>
       <group name="NegitiveTest">
-        <method signature="InitialSearchPageTest.CheckCityRespectiveToCountry()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="CheckCityRespectiveToCountry" class="testCases.InitialSearchPageTest"/>
-        <method signature="InitialSearchPageTest.CountriesAllowedTest()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="CountriesAllowedTest" class="testCases.InitialSearchPageTest"/>
-        <method signature="InitialSearchPageTest.PastDateBookingTest()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="PastDateBookingTest" class="testCases.InitialSearchPageTest"/>
-        <method signature="InitialSearchPageTest.homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" class="testCases.InitialSearchPageTest"/>
+        <method signature="InitialSearchPageTest.CheckCityRespectiveToCountry()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="CheckCityRespectiveToCountry" class="testCases.InitialSearchPageTest"/>
+        <method signature="InitialSearchPageTest.CountriesAllowedTest()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="CountriesAllowedTest" class="testCases.InitialSearchPageTest"/>
+        <method signature="InitialSearchPageTest.PastDateBookingTest()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="PastDateBookingTest" class="testCases.InitialSearchPageTest"/>
+        <method signature="InitialSearchPageTest.homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" class="testCases.InitialSearchPageTest"/>
       </group> <!-- NegitiveTest -->
       <group name="PositiveTest">
-        <method signature="InitialSearchResultPageTest.BookLowestFareTest()[pri:0, instance:testCases.InitialSearchResultPageTest@4883b407]" name="BookLowestFareTest" class="testCases.InitialSearchResultPageTest"/>
-        <method signature="UserDetailsPageTest.BookingCompletionTest()[pri:0, instance:testCases.UserDetailsPageTest@5442a311]" name="BookingCompletionTest" class="testCases.UserDetailsPageTest"/>
+        <method signature="InitialSearchResultPageTest.BookLowestFareTest()[pri:0, instance:testCases.InitialSearchResultPageTest@27c20538]" name="BookLowestFareTest" class="testCases.InitialSearchResultPageTest"/>
+        <method signature="UserDetailsPageTest.BookingCompletionTest()[pri:0, instance:testCases.UserDetailsPageTest@56ef9176]" name="BookingCompletionTest" class="testCases.UserDetailsPageTest"/>
       </group> <!-- PositiveTest -->
     </groups>
-    <test name="Home Page Test" duration-ms="12006" started-at="2022-02-06T16:46:40Z" finished-at="2022-02-06T16:46:52Z">
+    <test name="Home Page Test" duration-ms="12503" started-at="2022-02-07T13:10:37Z" finished-at="2022-02-07T13:10:50Z">
       <class name="testCases.InitialSearchPageTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="launchBrowser" is-config="true" duration-ms="3436" started-at="2022-02-06T22:16:40Z" finished-at="2022-02-06T22:16:44Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="5663" started-at="2022-02-07T18:40:37Z" finished-at="2022-02-07T18:40:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="CheckCityRespectiveToCountry()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="CheckCityRespectiveToCountry" duration-ms="1368" started-at="2022-02-06T22:16:44Z" finished-at="2022-02-06T22:16:45Z">
+        <test-method status="FAIL" signature="CheckCityRespectiveToCountry()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="CheckCityRespectiveToCountry" duration-ms="1469" started-at="2022-02-07T18:40:43Z" finished-at="2022-02-07T18:40:44Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Navigates further even if incorrect city is selected expected [false] but found [true]]]>
@@ -31,7 +31,7 @@
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertFalse(Assert.java:63)
-	at testCases.InitialSearchPageTest.CheckCityRespectiveToCountry(InitialSearchPageTest.java:82)
+	at testCases.InitialSearchPageTest.CheckCityRespectiveToCountry(InitialSearchPageTest.java:88)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckCityRespectiveToCountry -->
-        <test-method status="FAIL" signature="CountriesAllowedTest()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="CountriesAllowedTest" duration-ms="117" started-at="2022-02-06T22:16:45Z" finished-at="2022-02-06T22:16:45Z">
+        <test-method status="FAIL" signature="CountriesAllowedTest()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="CountriesAllowedTest" duration-ms="118" started-at="2022-02-07T18:40:44Z" finished-at="2022-02-07T18:40:44Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Incorrect/Misspelt Country Name expected [true] but found [false]]]>
@@ -61,7 +61,7 @@
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at testCases.InitialSearchPageTest.CountriesAllowedTest(InitialSearchPageTest.java:53)
+	at testCases.InitialSearchPageTest.CountriesAllowedTest(InitialSearchPageTest.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CountriesAllowedTest -->
-        <test-method status="FAIL" signature="PastDateBookingTest()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="PastDateBookingTest" duration-ms="928" started-at="2022-02-06T22:16:45Z" finished-at="2022-02-06T22:16:46Z">
+        <test-method status="FAIL" signature="PastDateBookingTest()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="PastDateBookingTest" duration-ms="940" started-at="2022-02-07T18:40:44Z" finished-at="2022-02-07T18:40:45Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Navigates to next Step even if PAST date is selected expected [false] but found [true]]]>
@@ -91,7 +91,7 @@
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertFalse(Assert.java:63)
-	at testCases.InitialSearchPageTest.PastDateBookingTest(InitialSearchPageTest.java:110)
+	at testCases.InitialSearchPageTest.PastDateBookingTest(InitialSearchPageTest.java:117)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -111,179 +111,95 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PastDateBookingTest -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="272" started-at="2022-02-06T22:16:46Z" finished-at="2022-02-06T22:16:46Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="265" started-at="2022-02-07T18:40:45Z" finished-at="2022-02-07T18:40:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="235" started-at="2022-02-06T22:16:46Z" finished-at="2022-02-06T22:16:47Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="232" started-at="2022-02-07T18:40:46Z" finished-at="2022-02-07T18:40:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="FAIL" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="793" started-at="2022-02-06T22:16:47Z" finished-at="2022-02-06T22:16:47Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Application Not Stable expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Application Not Stable expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:305)
-	at testCases.InitialSearchPageTest.homePageStability(InitialSearchPageTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="232" started-at="2022-02-07T18:40:46Z" finished-at="2022-02-07T18:40:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="FAIL" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="793" started-at="2022-02-06T22:16:47Z" finished-at="2022-02-06T22:16:48Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Application Not Stable expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Application Not Stable expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:305)
-	at testCases.InitialSearchPageTest.homePageStability(InitialSearchPageTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="254" started-at="2022-02-07T18:40:46Z" finished-at="2022-02-07T18:40:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="259" started-at="2022-02-06T22:16:48Z" finished-at="2022-02-06T22:16:48Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="234" started-at="2022-02-07T18:40:46Z" finished-at="2022-02-07T18:40:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="249" started-at="2022-02-06T22:16:48Z" finished-at="2022-02-06T22:16:49Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="242" started-at="2022-02-07T18:40:47Z" finished-at="2022-02-07T18:40:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="275" started-at="2022-02-06T22:16:49Z" finished-at="2022-02-06T22:16:49Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="229" started-at="2022-02-07T18:40:47Z" finished-at="2022-02-07T18:40:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="256" started-at="2022-02-06T22:16:49Z" finished-at="2022-02-06T22:16:49Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="227" started-at="2022-02-07T18:40:47Z" finished-at="2022-02-07T18:40:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="260" started-at="2022-02-06T22:16:49Z" finished-at="2022-02-06T22:16:49Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="251" started-at="2022-02-07T18:40:47Z" finished-at="2022-02-07T18:40:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="260" started-at="2022-02-06T22:16:49Z" finished-at="2022-02-06T22:16:50Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="229" started-at="2022-02-07T18:40:48Z" finished-at="2022-02-07T18:40:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="267" started-at="2022-02-06T22:16:50Z" finished-at="2022-02-06T22:16:50Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="234" started-at="2022-02-07T18:40:48Z" finished-at="2022-02-07T18:40:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="248" started-at="2022-02-06T22:16:50Z" finished-at="2022-02-06T22:16:50Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="257" started-at="2022-02-07T18:40:48Z" finished-at="2022-02-07T18:40:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="266" started-at="2022-02-06T22:16:50Z" finished-at="2022-02-06T22:16:50Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="227" started-at="2022-02-07T18:40:48Z" finished-at="2022-02-07T18:40:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="245" started-at="2022-02-06T22:16:50Z" finished-at="2022-02-06T22:16:51Z">
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="232" started-at="2022-02-07T18:40:49Z" finished-at="2022-02-07T18:40:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="FAIL" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="homePageStability" duration-ms="767" started-at="2022-02-06T22:16:51Z" finished-at="2022-02-06T22:16:51Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Application Not Stable expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Application Not Stable expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:305)
-	at testCases.InitialSearchPageTest.homePageStability(InitialSearchPageTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="homePageStability()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="homePageStability" duration-ms="249" started-at="2022-02-07T18:40:49Z" finished-at="2022-02-07T18:40:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageStability -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.InitialSearchPageTest@61832929]" name="tearDown" is-config="true" duration-ms="672" started-at="2022-02-06T22:16:51Z" finished-at="2022-02-06T22:16:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.InitialSearchPageTest@57fffcd7]" name="tearDown" is-config="true" duration-ms="656" started-at="2022-02-07T18:40:49Z" finished-at="2022-02-07T18:40:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.InitialSearchPageTest -->
     </test> <!-- Home Page Test -->
-    <test name="Search page Test" duration-ms="5716" started-at="2022-02-06T16:46:52Z" finished-at="2022-02-06T16:46:58Z">
+    <test name="Search page Test" duration-ms="5468" started-at="2022-02-07T13:10:50Z" finished-at="2022-02-07T13:10:55Z">
       <class name="testCases.InitialSearchResultPageTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.InitialSearchResultPageTest@4883b407]" name="launchBrowser" is-config="true" duration-ms="3213" started-at="2022-02-06T22:16:52Z" finished-at="2022-02-06T22:16:55Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.InitialSearchResultPageTest@27c20538]" name="launchBrowser" is-config="true" duration-ms="3002" started-at="2022-02-07T18:40:50Z" finished-at="2022-02-07T18:40:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="BookLowestFareTest()[pri:0, instance:testCases.InitialSearchResultPageTest@4883b407]" name="BookLowestFareTest" duration-ms="1874" started-at="2022-02-06T22:16:55Z" finished-at="2022-02-06T22:16:57Z">
+        <test-method status="PASS" signature="BookLowestFareTest()[pri:0, instance:testCases.InitialSearchResultPageTest@27c20538]" name="BookLowestFareTest" duration-ms="1814" started-at="2022-02-07T18:40:53Z" finished-at="2022-02-07T18:40:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookLowestFareTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.InitialSearchResultPageTest@4883b407]" name="tearDown" is-config="true" duration-ms="627" started-at="2022-02-06T22:16:57Z" finished-at="2022-02-06T22:16:58Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.InitialSearchResultPageTest@27c20538]" name="tearDown" is-config="true" duration-ms="650" started-at="2022-02-07T18:40:55Z" finished-at="2022-02-07T18:40:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.InitialSearchResultPageTest -->
     </test> <!-- Search page Test -->
-    <test name="User Details Test" duration-ms="5803" started-at="2022-02-06T16:46:58Z" finished-at="2022-02-06T16:47:04Z">
+    <test name="User Details Test" duration-ms="11303" started-at="2022-02-07T13:10:55Z" finished-at="2022-02-07T13:11:06Z">
       <class name="testCases.UserDetailsPageTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.UserDetailsPageTest@5442a311]" name="launchBrowser" is-config="true" duration-ms="2765" started-at="2022-02-06T22:16:58Z" finished-at="2022-02-06T22:17:01Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.UserDetailsPageTest@56ef9176]" name="launchBrowser" is-config="true" duration-ms="2662" started-at="2022-02-07T18:40:55Z" finished-at="2022-02-07T18:40:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="BookingCompletionTest()[pri:0, instance:testCases.UserDetailsPageTest@5442a311]" name="BookingCompletionTest" duration-ms="2401" started-at="2022-02-06T22:17:01Z" finished-at="2022-02-06T22:17:03Z">
+        <test-method status="FAIL" signature="BookingCompletionTest()[pri:0, instance:testCases.UserDetailsPageTest@56ef9176]" name="BookingCompletionTest" duration-ms="7984" started-at="2022-02-07T18:40:58Z" finished-at="2022-02-07T18:41:06Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Unable to navigate to Booking page expected [Booking Confirm] but found [Page not found at /rent/75]]]>
@@ -295,7 +211,7 @@
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
-	at testCases.UserDetailsPageTest.BookingCompletionTest(UserDetailsPageTest.java:27)
+	at testCases.UserDetailsPageTest.BookingCompletionTest(UserDetailsPageTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -315,7 +231,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookingCompletionTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.UserDetailsPageTest@5442a311]" name="tearDown" is-config="true" duration-ms="634" started-at="2022-02-06T22:17:03Z" finished-at="2022-02-06T22:17:04Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.UserDetailsPageTest@56ef9176]" name="tearDown" is-config="true" duration-ms="655" started-at="2022-02-07T18:41:06Z" finished-at="2022-02-07T18:41:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
